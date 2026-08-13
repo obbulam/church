@@ -1,5 +1,5 @@
-import React, { lazy } from "react";
 import "../style.css";
+import React from "react";
 import { Link } from "react-router-dom";
 import LEADERS from "../components/Leader";
 import EGLISE from "../components/Eglise";

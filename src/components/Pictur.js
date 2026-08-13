@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <footer className="footer">
@@ -30,7 +28,7 @@ function Footer() {
             <a href="https://www.youtube.com/@8%C3%A8meCEPACUGANDAMISSIONKampalaC">
               <i className="fa-brands fa-youtube"></i>
             </a>
-            <a href="#">
+            <a href="https://www.tiktok.com/@8cepac.kampala.ce">
               <i className="fa-brands fa-instagram"></i>
             </a>
             <a href="https://www.tiktok.com/@8cepac.kampala.ce">

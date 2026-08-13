@@ -1,7 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import { lazy } from "react";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Header2 from "../components/Header2";
 import Sidebar from "../components/EGLISE (2)";
@@ -17,9 +14,9 @@ import Image3 from "../img/background2.jpeg";
 import Image4 from "../img/background3.jpeg";
 import Image5 from "../img/background4.jpeg";
 
-function Home() {
-  const images = [Image1, Image2, Image3, Image4, Image5];
+const images = [Image1, Image2, Image3, Image4, Image5];
 
+function Home() {
   const [index, setIndex] = React.useState(0);
 
   React.useEffect(() => {
