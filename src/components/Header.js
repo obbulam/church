@@ -1,11 +1,6 @@
 import "../style.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import LEADERS from "../components/Leader";
-import EGLISE from "../components/Eglise";
-import MESSAGER from "../components/Messager";
-import DONNER from "../components/NotFound";
-import HOMME from "../pages/Home";
 
 function Header() {
   const [scrolled, setScrolled] = React.useState(false);
