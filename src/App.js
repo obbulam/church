@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Leader from "./components/Leader";
+import Eglise from "./components/Eglise";
+import Message from "./components/Messager";
+import Donner from "./components/NotFound";
+import "../src/style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/leader" element={<Leader />} />
+      <Route path="/eglise" element={<Eglise />} />
+      <Route path="/messager" element={<Message />} />
+      <Route path="*" element={<Donner />} />
+    </Routes>
   );
 }
 
